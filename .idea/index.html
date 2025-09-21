@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин косметики</title>
+    <link rel="stylesheet" href="../../../Desktop/uni%20materials/WEB/LAB/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "PT Sans", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="company-logo ">
+            <img src="../../../Desktop/uni%20materials/WEB/LAB/img/logo.svg" width="150" height="150" alt="logo">
+        </div>
+            <div class="company-name">
+                <h1>Maklevia <br> магазин косметики</h1>
+                <p>Світ краси прямо перед тобою!</p>
+            </div>
+            <div class="company-contacts">
+                <p>+38(066) 123-45-67</p>
+                <p>+38(099) 123-45-67</p>
+                <a href="#" id="open">Зворотний зв'язок</a>
+            </div>
+    </div>
+</header>
+<section class="popup" id="popup">
+    <div class="popup-form">
+        <button class="close-popup" id="close">&times;</button>
+        <h2>ЗВОРОТНИЙ ЗВ'ЯЗОК</h2>
+        <form id="Myform" class="needs-validation" novalidate>
+            <div>
+                <label for="name">Ваше ім'я *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="phone" pattern="[0]{1}[0-9]{9}" required>
+            </div>
+            <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <div>
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">НАДІСЛАТИ</button>
+        </form>
+    </div>
+</section>
+<section class="menu">
+    <div class="container">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Акції</a></li>
+            <li><a href="#">Доставка й оплата</a></li>
+        </ul>
+    </div>
+</section>
+<section class="slider">
+    <div class="mySlides active">
+        <img src="https://media.istockphoto.com/id/1296705483/photo/make-up-products-prsented-on-white-podiums-on-pink-pastel-background.jpg?s=612x612&w=0&k=20&c=j3Vfpo81L5I2g0uJ5tArBC3l_fcPtPAcLzzT4pq5BLY=" alt="cosmetics">
+    </div>
+    <div class="mySlides">
+        <img src="https://www.shutterstock.com/image-photo/make-products-pink-background-top-600nw-2197448551.jpg" alt="cosmetics">
+    </div>
+    <div class="mySlides">
+        <img src="https://media.istockphoto.com/id/1320345717/photo/various-cosmetic-accessories-for-makeup-and-manicure-on-trendy-pastel-pink-background-with.jpg?s=612x612&w=0&k=20&c=H35tfZdnHIBJLjXiX2Jfzoq32U8DrZEhZ__5l_05LsM=" alt="cosmetics">
+    </div>
+    <div class="mySlides">
+        <img src="https://img.freepik.com/premium-photo/pink-beauty-background-with-facial-cosmetic-makeup-products-free-space-text-copy-space_429124-110.jpg" alt="cosmetics">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+<div class="menu-bar">
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Акції</a></li>
+        <li><a href="#">Доставка й оплата</a></li>
+    </ul>
+</div>
+
+<section class="content">
+
+    <div class="centerblock">
+        <div class="products">
+            <a class="item" href="../../../Desktop/uni%20materials/WEB/LAB/Klevchuk_second1.html">
+                <img src="https://www.brocard.ua/media/catalog/product/cache/V17995681033/eyJ3IjoxMDAwLCJoIjoxMDAwLCJvIjoiY2F0YWxvZ1wvcHJvZHVjdFwvXC8zXC82XC8zNjY2MDU3MzE5MTgxXzEuanBnIn0=/clarins-lip-perfector.webp" alt="product">
+                <p>Бальзам для губ Lip Perfector Clarins</p>
+                <h2>500 грн</h2>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </h1>
+            </a>
+            <a class="item" href="../../../Desktop/uni%20materials/WEB/LAB/Klevchuk_second2.html">
+                <img src="https://www.brocard.ua/media/catalog/product/cache/V00163969/eyJ3IjoxMDAwLCJoIjoxMDAwLCJvIjoiY2F0YWxvZ1wvcHJvZHVjdFwvXC8zXC8zXC8zMzQ2NDcwMTMxMzg1XzEuanBnIn0=/guerlain-mon-guerlain.webp" alt="product">
+                <p>Парфумована вода Mon Guerlain GUERLAIN</p>
+                <h2>2000 грн</h2>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </h1>
+            </a>
+            <a class="item" href="#">
+                <img src="https://www.brocard.ua/media/catalog/product/cache/V154356524/eyJ3IjoxMDAwLCJoIjoxMDAwLCJvIjoiY2F0YWxvZ1wvcHJvZHVjdFwvXC84XC80XC84NDM2NTcxNjMwNzgwXzEuanBnIn0=/babe-laboratorios-healthy-aging.webp" alt="product">
+                <p>Сироватка для обличчя Healthy Aging BABE LABORATORIOS</p>
+                <h2>1100 грн</h2>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </h1>
+            </a>
+            <a class="item" href="#">
+                <img src="https://www.brocard.ua/media/catalog/product/cache/V160042457365/eyJ3IjoxMDAwLCJoIjoxMDAwLCJvIjoiY2F0YWxvZ1wvcHJvZHVjdFwvXC8zXC8zXC8zMzQ4OTAxNjY1ODEwXzEuanBnIn0=/dior-backstage-rosy-glow.webp" alt="product">
+                <p>Рум'яна Backstage Rosy Glow DIOR</p>
+                <h2>1500 грн</h2>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </h1>
+            </a>
+            <a class="item" href="#">
+                <img src="https://www.brocard.ua/media/catalog/product/cache/V009898138/eyJ3IjoxMDAwLCJoIjoxMDAwLCJvIjoiY2F0YWxvZ1wvcHJvZHVjdFwvXC84XC8wXC84MDA5NzQwODQ2NDgyXzEuanBnIn0=/perlier-orange-blossom.webp" alt="product">
+                <p>Крем для тіла Orange Blossom PERLIER</p>
+                <h2>350 грн</h2>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </h1>
+            </a>
+        </div>
+
+        <ul class="pagination">
+            <li><a href="#" class="page-link" data-page="1">1</a></li>
+            <li><a href="#" class="page-link" data-page="2">2</a></li>
+            <li><a href="#" class="page-link" data-page="3">3</a></li>
+            <li><a href="#" class="page-link" data-page="4">4</a></li>
+            <li><a href="#" class="page-link" data-page="5">5</a></li>
+        </ul>
+        <hr style="border-color: #605f5f; border-width: 1px; width: 100%;">
+        <div class="content-text">
+            <p>Ваша краса заслуговує найкращого, тому ми пропонуємо тільки високоякісну косметику, що підходить для будь-якого типу шкіри. Наша продукція створена з натуральних компонентів, що забезпечують ефективний догляд та глибоке зволоження. Ми впевнені, що кожен знайде щось для себе серед наших косметичних засобів, хай то буде для щоденного використання або для спеціальних процедур.</p>
+            <p>Догляд за собою — це не лише про зовнішній вигляд, але й про внутрішній комфорт. Завдяки нашим продуктам ви відчуєте не тільки покращення стану шкіри, але й впевненість у собі. Перегляньте наш асортимент, оберіть те, що підходить саме вам, і зробіть крок до здорової та сяйної шкіри вже сьогодні.</p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container">
+        <div id="FOOTER1">
+            <p>© 2024-2025 ТОВ "Maklevia"</p>
+            <p>maklevia@info.ua</p>
+        </div>
+        <div id="FOOTER2">
+            <ul style="list-style-type:none">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Акції</a></li>
+                <li><a href="#">Доставка й оплата</a></li>
+            </ul>
+        </div>
+        <div style="display: flex;" id="FOOTER3">
+            <img alt="logo" width="70" height="70" src="../../../Desktop/uni%20materials/WEB/LAB/img/footer-logo.svg">
+            <p>Розробка сайту - <br> Клевчук Марія, ІПС-22</p>
+        </div>
+    </div>
+</footer>
+<script src="../../../Desktop/uni%20materials/WEB/LAB/script.js"></script>
+</body>
+</html>
